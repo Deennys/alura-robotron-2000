@@ -58,6 +58,33 @@ main {
     color: rgba(255,255,255,0.8)
 }
 
+.opcoes-cores {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titulo-cor {
+    font-size: 24px;
+}
+
+.botao-cor {
+    margin: auto 0;
+    border: 0;
+    clip-path: polygon(calc(100% - 15px) 0, 100% 15px, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px), 0 15px, 15px 0);
+    font-size: 16px;
+    font-weight: 600;
+    height: 4em;
+
+}
+
+.botao-cor:hover {
+    transform: scale(1.2);
+    z-index: 3;
+}
+
+
+
 .box {
     background: rgba(0,0,0,0.6);
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
@@ -72,7 +99,7 @@ main {
 }
 
 .montador {
-    height: 100%;;
+    height: 100vh;
 }
 
 .montador-conteudo {
@@ -230,4 +257,53 @@ main {
         height: 80vh;
         margin: 10vh auto;
     }
+}
+
+[data-cor="Amarelo"] {
+    background-color: yellow;
+}
+
+[data-cor="Amarelo"]:hover {
+    background-color: rgb(225, 225, 0);
+}
+
+[data-cor="Azul"] {
+    background-color: blue;
+}
+
+[data-cor="Azul"]:hover {
+    background-color: rgb(0, 0, 210);
+}
+
+[data-cor="Branco"] {
+    background-color: white;
+}
+
+[data-cor="Branco"]:hover {
+    background-color: rgb(210, 210, 210);
+}
+
+[data-cor="Preto"] {
+    background-color: black;
+    color: white;
+}
+
+[data-cor="Preto"]:hover {
+    background-color: rgb(20, 20, 20);
+}
+
+[data-cor="Rosa"] {
+    background-color: pink;
+}
+
+[data-cor="Rosa"]:hover {
+    background-color: rgb(225, 182, 180);
+}
+
+[data-cor="Vermelho"] {
+    background-color: red;
+}
+
+[data-cor="Vermelho"]:hover {
+    background-color: rgb(220, 0, 0);
 }
